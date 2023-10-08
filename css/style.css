@@ -14,7 +14,18 @@
     --negro: #000000;
 }
 
-body {
+body{
+    font-family: var(--fuenteHeading);
+    /* font-size: 1.6rem; */
+    /* line-height: 2; */
+    background-image: url(../img/titan1.jpg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo
+    /* Opcional: ajusta la posición de la imagen */
+    /* background-position: center center; */
+}
+
+.body-credito {
     font-family: var(--fuenteHeading);
     /* font-size: 1.6rem; */
     /* line-height: 2; */
@@ -24,6 +35,18 @@ body {
     /* Opcional: ajusta la posición de la imagen */
     /* background-position: center center; */
 }
+
+.body-como {
+    font-family: var(--fuenteHeading);
+    /* font-size: 1.6rem; */
+    /* line-height: 2; */
+    background-image: url(../img/titan3.jpg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo
+    /* Opcional: ajusta la posición de la imagen */
+    /* background-position: center center; */
+}
+
 .body-tablero, .body-tablero-html {
             height: 100%;                       /* Ocupar toda la altura de la pantalla */
             margin: 0;

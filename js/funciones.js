@@ -24,6 +24,11 @@ function esperarMovimiento() {
     });
 }
 
+// Funcion que genera un numero aleatorio
+function tirarDado() { // Usa la sintaxis de función tradicional para definir métodos
+    return Math.ceil(Math.random() * 6);
+}
+
 // Determina la posicion en pantalla de una casilla
 function encontrarPosicion(element) {
     var rec = document.getElementById(element).getBoundingClientRect();
@@ -110,14 +115,15 @@ async function iniciarJuego(){
         casilla.appendChild(ficha);
     }
     
+    // Ciclo que mantiene el juego hasta que finalice
     while (1) {
-        // Primer ronda de tiradas
+        // for que controla cada ronda de tiradas
         for (let i = 0; i < 4; i++) {
             // Se reinicia la bandera para el nuevo jugador
             movido = 0
 
             // El jugador lanza el dado
-            let desplazamiento = jugadores[i].tirarDado();
+            let desplazamiento = tirarDado();
         
             console.log("jugador "+jugadores[i].id_j+" se movera "+desplazamiento+" casillas")
         

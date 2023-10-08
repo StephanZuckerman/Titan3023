@@ -5,7 +5,10 @@ let casillas = [];
 let jugadores = [];
 
 // Varibale de control para saber cuando un jugador dejó de moverse
-let movido = 0
+let movido = 0;
+
+// Variable para indicar jugador ganador de la partida
+let ganador = 0;
 
 // Funcion para generar esperas
 function esperar(ms) {
@@ -57,18 +60,20 @@ async function moverJugador(jugador, desplazamiento){
         let conSig = document.getElementById("casilla"+jugador.posicion);
         
         // Crea la nueva ficha para representar al jugador
-        let casillaSiguiente = document.createElement('p');
-        
-        // Se agrega el id para identificarla con el jugador
-        casillaSiguiente.id = "t_c"+jugador.id_j
+        let casillaSiguiente = document.createElement('img');
 
-        // Le colocamos el texto 
-        casillaSiguiente.textContent = "Jugador "+jugador.id_j
+        // Se le agrega un id referente al jugador que representa
+        casillaSiguiente.id="t_c"+jugador.id_j
+        casillaSiguiente.src="img/perro"+(jugador.id_j)+".png"
+        casillaSiguiente.alt="jugador "+(jugador.id_j)
+        casillaSiguiente.className="perrito-ficha"
         
         // Se añade la ficha a la casilla
         conSig.appendChild(casillaSiguiente);
 
         if (jugador.posicion == 51) {
+            jugador.ganadas++;
+            ganador = jugador.id_j;
             window.location.href = 'victoria.html';
         }
     }
@@ -99,13 +104,13 @@ async function iniciarJuego(){
         jugadores.push(jugador);
     
         // Paso 1: Crear un nuevo elemento, que representara la posicion del jugador
-        let ficha = document.createElement('p');
+        let ficha = document.createElement('img');
         
         // Se le agrega un id referente al jugador que representa
         ficha.id="t_c"+(i+1)
-
-        // Paso 2: Configurar el contenido del elemento
-        ficha.textContent = "Jugador "+(i+1);
+        ficha.src="img/perro"+(i+1)+".png"
+        ficha.alt="jugador "+(i+1)
+        ficha.className="perrito-ficha"
 
         // Paso 3: Encontrar el elemento padre al que deseas agregar el nuevo elemento
         // Todos los jugadores inician en la casilla 1

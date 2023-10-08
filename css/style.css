@@ -62,6 +62,7 @@
             height: 100%;                       /* Ocupar toda la altura de la pantalla */
             margin: 0;
             padding: 0;
+            background-image: url(../img/fondoPerro.png);
 }
 
 a{
@@ -89,7 +90,20 @@ a:hover{
     font-size: 3rem;
     line-height: 0%;
 }
-
+.headerTablero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100; /* Establece la altura al 100% del viewport */
+    margin-bottom: 0%; /* Elimina el margen predeterminado del body */
+    font-size: 2rem;
+    line-height: 0%;
+    font-family: 'Nasa', 'Arial';
+    padding: 0;
+    margin: 0;
+}
 .menu {
     text-align: center;
 }
@@ -136,7 +150,7 @@ a:hover{
     background-size: cover;             /* Ajustar la imagen para que cubra todo el fondo */
     background-repeat: no-repeat;       /* Evitar que la imagen de fondo se repita */
     background-position: center center;
-    
+    border-radius: 10%;
 }
 
                                          /* Estilo de la cuadrícula */
@@ -175,8 +189,10 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    border-radius: 1;
+    border-radius: 25%;
     padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0  1rem;
 }
 .mitadI {
     flex: 1;
@@ -185,10 +201,11 @@ a:hover{
 .perrito {
     height: 100%;
     width: 100%;
-    margin: auto;
 }
 .perrito-Persona {
-    margin: 0;
     text-align: center;
     font-family: 'Nasa','Arial';
+    color: white;
+    padding: 0;
+    margin: 0;
 }

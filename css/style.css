@@ -182,7 +182,9 @@ a:hover{
 }
                                         /* Estilo de los rectángulos */
 .rectangulo {                            
-    text-align: center;                 /* Alineación del texto en el rectángulo */
+    text-align: center;
+    border-bottom: 4px solid red;
+    height: 80%;                 
 }
 
 #caja {	
@@ -198,7 +200,7 @@ a:hover{
     height: 100%;                       /* Centrar la imagen de fondo */
     
 }
-.mitadS, .mitadI {
+.mitadS {
     flex: 1;
     background-color: #e0e0e0;
     display: grid;
@@ -208,10 +210,28 @@ a:hover{
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
     margin:0  1rem;
+    height: 100%;
 }
 
 .mitadI {
-    margin-top: 2rem;
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 25%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0  1rem;
+    height: 100%;
+}
+
+.dado-img{
+    height: 9rem;
+    justify-content: center;
+    transition: .7s;
+}
+
+.dado-img:hover{
+    height: 11rem;
+    transition: .7s;
 }
 
 .perrito {
@@ -219,13 +239,26 @@ a:hover{
     width: 100%;
 }
 .perrito-Persona {
+    font-size: 1.5rem;
     text-align: center;
     font-family: 'Nasa','Arial';
     color: white;
     padding: 0;
     margin: 0;
+<<<<<<< Updated upstream
 }
 .perrito-ficha {
     height: 100%;
     width: 100%;
 }
+=======
+    position: relative;
+    bottom: 50px;
+}
+.div__img--dado{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+    align-items: center;
+}
+>>>>>>> Stashed changes

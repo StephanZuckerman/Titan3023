@@ -183,7 +183,7 @@ a:hover{
     height: 100%;                       /* Centrar la imagen de fondo */
     
 }
-.mitadS {
+.mitadS, .mitadI {
     flex: 1;
     background-color: #e0e0e0;
     display: grid;
@@ -194,10 +194,11 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.2);
     margin:0  1rem;
 }
+
 .mitadI {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.171);
+    margin-top: 2rem;
 }
+
 .perrito {
     height: 100%;
     width: 100%;

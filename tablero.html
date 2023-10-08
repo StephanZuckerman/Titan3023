@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet Race</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.cdnfonts.com/css/nasa" rel="stylesheet">
     <script src="js/Jugador.js"></script>
     <script src="js/Casilla.js"></script>
     <script src="js/funciones.js"></script>
@@ -27,8 +26,85 @@
                     for (let i = 1; i <= 51; i++) {
                         const div = document.createElement("div");
                         div.classList.add("rectangulo");
-                        div.id = "casilla" + i;
-                        div.textContent = i;
+                        
+                        // La primera y la segunda fila no se alteran
+                        if (i <= 17 || i >= 35){
+                            div.id = "casilla" + i;
+                            div.textContent = i;
+                        } else {
+                            // La fila de enmedio tiene su progresion invertida
+                            switch(i){
+                                case 18:
+                                    div.id = "casilla34";
+                                    div.textContent = 34;
+                                    break;
+                                case 19:
+                                    div.id = "casilla33";
+                                    div.textContent = 33;
+                                    break;
+                                case 20:
+                                    div.id = "casilla32";
+                                    div.textContent = 32;
+                                    break;
+                                case 21:
+                                    div.id = "casilla31";
+                                    div.textContent = 31;
+                                    break;
+                                case 22:
+                                    div.id = "casilla30";
+                                    div.textContent = 30;
+                                    break;
+                                case 23:
+                                    div.id = "casilla29";
+                                    div.textContent = 29;
+                                    break;
+                                case 24:
+                                    div.id = "casilla28";
+                                    div.textContent = 28;
+                                    break;
+                                case 25:
+                                    div.id = "casilla27";
+                                    div.textContent = 27;
+                                    break;
+                                case 27:
+                                    div.id = "casilla25";
+                                    div.textContent = 25;
+                                    break;
+                                case 28:
+                                    div.id = "casilla24";
+                                    div.textContent = 24;
+                                    break;
+                                case 29:
+                                    div.id = "casilla23";
+                                    div.textContent = 23;
+                                    break;
+                                case 30:
+                                    div.id = "casilla22";
+                                    div.textContent = 22;
+                                    break;
+                                case 31:
+                                    div.id = "casilla21";
+                                    div.textContent = 21;
+                                    break;
+                                case 32:
+                                    div.id = "casilla20";
+                                    div.textContent = 20;
+                                    break;
+                                case 33:
+                                    div.id = "casilla19";
+                                    div.textContent = 19;
+                                    break;
+                                case 34:
+                                    div.id = "casilla18";
+                                    div.textContent = 18;
+                                    break;
+                                default:
+                                    div.id = "casilla" + i;
+                                    div.textContent = i;
+                            }
+                        }
+                            
+
                         contenedor.appendChild(div);
                     }
                 </script>
@@ -36,32 +112,9 @@
         </div>
         <div class = "contain-personajes">
             <section class = "mitadS">
-                <section>
-                    <img src="img/perro1.png" alt="foto de un perrito" class = "perrito">
-                    <p class = "perrito-Persona"> 
-                        Jugador 1
-                    </p>
-                </section>
-                <section>
-                    <img src="img/perro2.png" alt="foto de un perrito" class = "perrito">
-                    <p class = "perrito-Persona">  
-                        Jugador 2
-                    </p>
-                </section>
-                <section>
-                    <img src="img/perro3.png" alt="foto de un perrito" class = "perrito">
-                    <p class = "perrito-Persona"> 
-                        Jugador 3
-                    </p>
-                </section>
-                <section>
-                    <img src="img/perro4.png" alt="foto de un perrito" class = "perrito">
-                    <p class = "perrito-Persona"> 
-                        Jugador 4
-                    </p>
-                </section>                
+                Aqui dentro irian los personajes                
             </section>
-            <section class = "mitadI" class = "perrito">
+            <section class = "mitadI">
                 Aqui dentro irian los anuncios del juego
             </section>
         </div>

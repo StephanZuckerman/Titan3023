@@ -14,7 +14,7 @@
     --negro: #000000;
 }
 
-body{
+.body-inicio{
     font-family: var(--fuenteHeading);
     /* font-size: 1.6rem; */
     /* line-height: 2; */

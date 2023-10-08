@@ -245,20 +245,17 @@ a:hover{
     color: white;
     padding: 0;
     margin: 0;
-<<<<<<< Updated upstream
+
 }
 .perrito-ficha {
-    height: 100%;
+    height: 40%;
     width: 100%;
 }
-=======
-    position: relative;
-    bottom: 50px;
-}
+
+
 .div__img--dado{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     height: 100%;
     align-items: center;
 }
->>>>>>> Stashed changes

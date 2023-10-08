@@ -20,9 +20,9 @@ function esperarMovimiento() {
           clearInterval(intervalo);
           resolve();
         }
-      }, 500); // Verificar cada 100 milisegundos si movido cambió
+      }, 500); // Verificar cada 500 milisegundos si movido cambió
     });
-  }
+}
 
 // Determina la posicion en pantalla de una casilla
 function encontrarPosicion(element) {
@@ -62,6 +62,10 @@ async function moverJugador(jugador, desplazamiento){
         
         // Se añade la ficha a la casilla
         conSig.appendChild(casillaSiguiente);
+
+        if (jugador.posicion == 51) {
+            window.location.href = 'victoria.html';
+        }
     }
 
     // Se indica que termianron los movimientos
@@ -106,21 +110,23 @@ async function iniciarJuego(){
         casilla.appendChild(ficha);
     }
     
-    // Primer ronda de tiradas
-    for (let i = 0; i < 4; i++) {
-        // Se reinicia la bandera para el nuevo jugador
-        movido = 0
+    while (1) {
+        // Primer ronda de tiradas
+        for (let i = 0; i < 4; i++) {
+            // Se reinicia la bandera para el nuevo jugador
+            movido = 0
 
-        // El jugador lanza el dado
-        let desplazamiento = jugadores[i].tirarDado();
+            // El jugador lanza el dado
+            let desplazamiento = jugadores[i].tirarDado();
         
-        console.log("jugador "+jugadores[i].id_j+" se movera "+desplazamiento+" casillas")
+            console.log("jugador "+jugadores[i].id_j+" se movera "+desplazamiento+" casillas")
         
-        // Se realiza el desplazamientp
-        moverJugador(jugadores[i], desplazamiento);
+            // Se realiza el desplazamientp
+            moverJugador(jugadores[i], desplazamiento);
         
-        // El siguiente jugador no incia hasta que termine el turno anterior
-        await esperarMovimiento();
+            // El siguiente jugador no incia hasta que termine el turno anterior
+            await esperarMovimiento();
+        }
     }
 }
 

@@ -154,7 +154,6 @@ a:hover{
                                         /* Estilo de los rectángulos */
 .rectangulo {                            
     text-align: center;                 /* Alineación del texto en el rectángulo */
-    padding: 10px;                      /* Espacio interior del rectángulo */
 }
 
 #caja {	

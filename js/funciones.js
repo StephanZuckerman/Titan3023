@@ -16,9 +16,9 @@ for (let i = 1; i < 52; i++) {
 function moverJugador(jugador, desplazamiento){
     for (let i = jugador.posicion; i < desplazamiento; i++) {
         // Se elimina al jugador de la casilla actual
-        setTimeout(casilla[jugador.posicion-1].alterarCasilla(jugador.id_j), 1000);
+        setTimeout(casillas[jugador.posicion-1].alterarCasilla(jugador.id_j), 1000);
         // Se registra al jugador en la siguiente
-        setTimeout(casilla[jugador.posicion].alterarCasilla(jugador.id_j), 1000);
+        setTimeout(casillas[jugador.posicion].alterarCasilla(jugador.id_j), 1000);
     }
 }
 

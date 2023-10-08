@@ -21,35 +21,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class = "encimaTablero">
-        Videojuego
+    <header class="header">
+        <h1>PLANET RACE</h1> 
+
     </header>
-    <body class = "body" >
-        <div id = "caja">
-            <div  class="fondo">
-                <div id="contenedor" class = "grid"> <!-- Aqui se generan todos los divs-->
-                    <script>
-                        // Obtener el contenedor donde se agregarán los divs
-                        const contenedor = document.getElementById("contenedor");
-                        // Crear 51 elementos div con las clases y IDs especificados
-                        for (let i = 1; i <= 51; i++) {
-                            const div = document.createElement("div");
-                            div.classList.add("rectangulo");
-                            div.id = "casilla" + i;
-                            div.textContent = i;
-                            contenedor.appendChild(div);
-                        }
-                    </script>
-                </div>
-                
-            </div>
-            <div>
-                    Aqui dentro irian los personajes                
-            </div>
-        </div>
-            
-    </body>
-    <footer class = "debajoTablero">
-        Footer
-    </footer>
+
+    <div class="menu">
+
+
+        <p><a href="tablero.html" class="text__center">INICIAR</a></br>
+        <a href="como.html" class="text__center">COMO JUGAR</a></br>
+        <a href="creditos.html" class="text__center">CREDITOS</a></p>
+
+
+    </div >
+
+
+    <div class="firma">
+        <p>
+            By Dogs Of Bad 
+            <img src="img/Logo.png" width="13.5px" alt="Logo">
+        </p>
+    </div>
+
+</body>
 </html>

@@ -130,8 +130,8 @@ a:hover{
 }
 /* Las siguientes tres clases ayudan */
 .fondo {
-    width: 85%;                        /* Ocupar todo el ancho de la pantalla */
-    height: 85%;                       /* Ocupar toda la altura de la pantalla */
+    width: 90%;                        /* Ocupar todo el ancho de la pantalla */
+    height: 90%;                       /* Ocupar toda la altura de la pantalla */
     background-image: url(../img/background.jpeg); /* Ruta de tu imagen */
     background-size: cover;             /* Ajustar la imagen para que cubra todo el fondo */
     background-repeat: no-repeat;       /* Evitar que la imagen de fondo se repita */
@@ -161,8 +161,8 @@ a:hover{
 #caja {	
     display: grid;
     grid-template-columns: 80% auto; 
-    width: 100%;                        /* Ocupar todo el ancho disponible */
-    height: 100%; 
+    width: 85%;                        /* Ocupar todo el ancho disponible */
+    height: 85%; 
     margin: 0 0;
     padding: auto;
     

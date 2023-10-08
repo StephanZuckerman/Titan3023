@@ -108,6 +108,11 @@ a:hover{
     text-align: center;
 }
 
+.menu__final{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
 .text__center {
     text-align: center;
     color: white;
@@ -125,6 +130,16 @@ a:hover{
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);
     border-radius: 20px; /* Todas las esquinas tienen un radio de 10px */
 
+}
+
+.ganador{
+    
+    max-width: 40%;
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    transform: translate(0, -50%);
+    
 }
 
 .firma{
@@ -203,12 +218,6 @@ a:hover{
     height: 100%;
     width: 100%;
 }
-
-.perrito-ficha {
-    height: 100%;
-    width: 100%;
-}
-
 .perrito-Persona {
     text-align: center;
     font-family: 'Nasa','Arial';

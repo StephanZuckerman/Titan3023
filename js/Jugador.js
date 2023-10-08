@@ -10,6 +10,3 @@ class Jugador {
         return Math.ceil(Math.random() * 6);
     }
 }
-
-const jugador = new Jugador(1);
-console.log(jugador.tirarDado());

@@ -47,6 +47,17 @@ body{
     /* background-position: center center; */
 }
 
+.body-victoria {
+    font-family: var(--fuenteHeading);
+    /* font-size: 1.6rem; */
+    /* line-height: 2; */
+    background-image: url(../img/titan4.jpg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo
+    /* Opcional: ajusta la posición de la imagen */
+    /* background-position: center center; */
+}
+
 .body-tablero, .body-tablero-html {
             height: 100%;                       /* Ocupar toda la altura de la pantalla */
             margin: 0;

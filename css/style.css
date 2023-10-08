@@ -158,15 +158,6 @@ a:hover{
 
 #caja {	
     display: grid;
-    grid-template-columns: 80% auto; 
-    width: 85%;                        /* Ocupar todo el ancho disponible */
-    height: 85%; 
-    margin: 0 0;
-    padding: auto;
-    
-}
-#caja {	
-    display: grid;
     grid-template-columns: 80% 20%; 
     width: 100%;                        /* Ocupar todo el ancho disponible */
     height: 85%; 
@@ -178,7 +169,14 @@ a:hover{
     height: 100%;                       /* Centrar la imagen de fondo */
     
 }
-.mitadS, .mitadI {
+.mitadS {
+    flex: 1;
+    background-color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.mitadI {
     flex: 1;
     background-color: #e0e0e0;
 }

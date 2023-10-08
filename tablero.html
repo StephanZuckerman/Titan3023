@@ -9,24 +9,36 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link type="script" href="js/script.js">
 </head>
-
-    <body class = "body-tablero" >
-            <div  class="fondo">
-                <div id="contenedor" class = "grid"> <!-- Aqui se generan todos los divs-->
-                    <script>
-                        // Obtener el contenedor donde se agregarán los divs
-                        const contenedor = document.getElementById("contenedor");
-                        // Crear 51 elementos div con las clases y IDs especificados
+<header class = "encimaTablero">
+    Videojuego
+</header>
+<body class = "body-tablero" >
+    <div id = "caja">
+        <div  class="fondo">
+            <div id="contenedor" class = "grid"> <!-- Aqui se generan todos los divs-->
+                <script>
+                    // Obtener el contenedor donde se agregarán los divs
+                    const contenedor = document.getElementById("contenedor");
+                    // Crear 51 elementos div con las clases y IDs especificados
                     for (let i = 1; i <= 51; i++) {
-                    const div = document.createElement("div");
-                    div.classList.add("rectangulo");
-                    div.id = "casilla" + i;
-                    div.textContent = i;
-                    contenedor.appendChild(div);
+                        const div = document.createElement("div");
+                        div.classList.add("rectangulo");
+                        div.id = "casilla" + i;
+                        div.textContent = i;
+                        contenedor.appendChild(div);
                     }
-                    </script>
-                </div>
+                </script>
             </div>
-        </body>
+            
+        </div>
+        <div>
+                Aqui dentro irian los personajes                
+        </div>
+    </div>
+        
+</body>
+<footer class = "debajoTablero">
+    Footer
+</footer>
 </html>
 

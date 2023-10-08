@@ -5,8 +5,4 @@ class Jugador {
         this.posicion = 1;
     }
 
-    /** Método */
-    tirarDado() { // Usa la sintaxis de función tradicional para definir métodos
-        return Math.ceil(Math.random() * 6);
-    }
 }

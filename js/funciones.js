@@ -24,6 +24,11 @@ function esperarMovimiento() {
     });
 }
 
+// Funcion que genera un numero aleatorio
+function tirarDado() { // Usa la sintaxis de función tradicional para definir métodos
+    return Math.ceil(Math.random() * 6);
+}
+
 // Determina la posicion en pantalla de una casilla
 function encontrarPosicion(element) {
     var rec = document.getElementById(element).getBoundingClientRect();
